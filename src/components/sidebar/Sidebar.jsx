@@ -94,18 +94,23 @@ export default function Sidebar() {
         <div className="sidebarMenu">
           <h3 className="sidebarTitle">Staff</h3>
           <ul className="sidebarList">
+          <Link to="/manage" className="link">
             <li className="sidebarListItem">
               <WorkOutline className="sidebarIcon" />
               Manage
             </li>
+          </Link>
+          <Link to="/analytics" className="link">
             <li className="sidebarListItem">
               <Timeline className="sidebarIcon" />
               Analytics
             </li>
+            </Link>
+            <Link to="/report" className="link">
             <li className="sidebarListItem">
               <Report className="sidebarIcon" />
               Reports
-            </li>
+            </li></Link>
           </ul>
         </div>
       </div>
